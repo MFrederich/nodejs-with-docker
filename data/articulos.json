@@ -1,0 +1,25 @@
+[{
+  "_id": "04e9f6a0-a304-11ea-bf58-5987b78e0fc7",
+  "sku": "SCLCM00112",
+  "descripcion": "Cama Plaza 1 1/2",
+  "cantidad": 1,
+  "fecha_ingreso": 1590904824586
+},{
+  "_id": "b6a39800-a305-11ea-a9ac-e70d1b61033b",
+  "sku": "SCLALM0564",
+  "descripcion": "Almohada con memoria. Pack de 5.",
+  "cantidad": 10,
+  "fecha_ingreso": 1590905552256
+},{
+  "_id": "e1df8e70-a305-11ea-a9ac-e70d1b61033b",
+  "sku": "SCLSAB0251",
+  "descripcion": "Sabanas Queen Patrón 1",
+  "cantidad": 3,
+  "fecha_ingreso": 1590905624791
+},{
+  "_id": "ef0a6020-a305-11ea-a9ac-e70d1b61033b",
+  "sku": "SCLSAB0252",
+  "descripcion": "Sabanas Queen Patrón 2",
+  "cantidad": 3,
+  "fecha_ingreso": 1590905646883
+}]
