@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "18fafe83-22f6-4e4e-87b8-badbe0b832c7",
+		"name": "Docker with Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Get Articulos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"disabled": false,
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"sku\": \"SCLCM00112\",\r\n\t\"descripcion\": \"Cama Plaza 1 1/2\",\r\n\t\"cantidad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}/articulo",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articulo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Articulo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"disabled": false,
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"sku\": \"SCLCM00112\",\r\n\t\"descripcion\": \"Cama Plaza 1 1/2\",\r\n\t\"cantidad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}/articulo",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articulo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Articulo",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"disabled": false,
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"sku\": \"SCLSAB0252\",\r\n\t\"descripcion\": \"Sabanas Queen Patrón 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}/articulo/ef0a6020-a305-11ea-a9ac-e70d1b61033b",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"articulo",
+								"ef0a6020-a305-11ea-a9ac-e70d1b61033b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Articulo Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"disabled": false,
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/articulo/587689c0-a30c-11ea-af81-a966d039f0eb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articulo",
+								"587689c0-a30c-11ea-af81-a966d039f0eb"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7ad8bdcd-3bef-47c3-b90b-7bd1dd40dce3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b6c56fed-e0ba-489e-98b5-4376a93a8a79",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
