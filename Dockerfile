@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 8080
 
 #Run npm docker
-CMD [ "npm", "run docker" ]
+CMD [ "npm", "run", "docker" ]
