@@ -18,3 +18,7 @@ This is an example of a CRUD Rest Node project, with Docker Container build.
 # Motivation
 This project was used to learn about Node.js, the Hapi framework and how to create Node containers for docker.
 Since this was used for learning, there is a lot of room for improvements.
+
+# How to run
+- In local: `npm start`
+- With docker: `docker-compose up -d`
