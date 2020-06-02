@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-with-docker",
+  "version": "1.0.0",
+  "description": "Simple Dockerized CRUD Example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "start": "node app.js",
+    "docker": "MONGOSRV=mongo node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pperez-accenture/nodejs-with-docker.git"
+  },
+  "author": "Patricio Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pperez-accenture/nodejs-with-docker/issues"
+  },
+  "homepage": "https://github.com/pperez-accenture/nodejs-with-docker#readme",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/vision": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "hapi-swagger": "^13.0.2",
+    "mongodb": "^3.5.8",
+    "mongojs": "^3.1.0",
+    "node-uuid": "^1.4.8"
+  }
+}
