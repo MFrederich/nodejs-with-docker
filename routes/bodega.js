@@ -1,5 +1,7 @@
 'use strict';
 
+require('dotenv').config()
+
 const uuid = require('node-uuid');  
 const mongojs = require('mongojs');
 
@@ -9,8 +11,9 @@ const Joi = require('@hapi/joi');
 //To configure the connection, we are going to use injected variables.
 //As default, it will recognize localhost (for dev purposes).
 //To run dockerized, use: npm run docker
-const mongoSrv = process.env.MONGOSRV ?? "localhost"
-const connection = `mongodb://${mongoSrv}:27017/bodega`;
+const mongoSrv = process.env.DB_HOST ?? "localhost"
+const mongoPort = process.env.DB_POST ?? "27017"
+const connection = `mongodb://${mongoSrv}:${mongoPort}/bodega`;
 
 const guidExample = "f4b23110-a319-11ea-94a8-835ccf0337c7";
 const skuExample = "ABCDEF1234";
