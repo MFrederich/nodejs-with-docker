@@ -4,20 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MFrederich/nodejs-with-docker.git"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "Alexander Frederich",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MFrederich/nodejs-with-docker/issues"
-  },
   "homepage": "https://github.com/MFrederich/nodejs-with-docker#readme",
   "dependencies": {
-    "@hapi/hapi": "^19.1.1"
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/joi": "^17.1.1",
+    "mongoose": "^5.9.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
